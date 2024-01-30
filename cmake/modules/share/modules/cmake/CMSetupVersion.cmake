@@ -1,5 +1,5 @@
 include(GNUInstallDirs)
-set(CM_HEADER_VERSION_TEMPLATE_FILE "version.hpp")
+set(CM_HEADER_VERSION_TEMPLATE_FILE "${CMAKE_CURRENT_LIST_DIR}/version.hpp")
 
 macro(cm_set_parent VAR)
     set(${VAR} ${ARGN} PARENT_SCOPE)

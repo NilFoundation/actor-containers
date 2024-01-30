@@ -13,7 +13,7 @@ cm_setup_version(VERSION 1.0)
 add_library(simple simple.cpp)
 target_include_directories(simple PRIVATE $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>)
 
-cm_deploy(TARGETS simple include include)
+cm_deploy(TARGETS simple INCLUDE include)
 
 cm_test(NAME simpletoptest SOURCES test.cpp)
 target_link_libraries(simpletoptest simple)

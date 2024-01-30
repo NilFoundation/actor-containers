@@ -12,7 +12,7 @@ cm_setup_version(VERSION 1.0)
 
 add_library(simple INTERFACE)
 target_compile_definitions(simple INTERFACE -DHAS_SIMPLE=1)
-cm_deploy(TARGETS simple include include NAMESPACE lib::)
+cm_deploy(TARGETS simple INCLUDE include NAMESPACE lib::)
 
 cm_test(NAME simpletest SOURCES test.cpp)
 target_link_libraries(simpletest lib::simple)

@@ -12,7 +12,7 @@ cm_setup_version(VERSION 1.0)
 
 add_library(simple INTERFACE)
 
-cm_install_targets(TARGETS simple include include)
+cm_install_targets(TARGETS simple INCLUDE include)
 cm_auto_export(TARGETS simple)
 cm_auto_pkgconfig(TARGET simple)
 

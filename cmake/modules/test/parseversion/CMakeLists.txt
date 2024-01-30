@@ -16,7 +16,7 @@ endif()
 
 add_library(simple INTERFACE)
 
-cm_install_targets(TARGETS simple include include)
+cm_install_targets(TARGETS simple INCLUDE include)
 
 cm_test(NAME simpletest SOURCES test.cpp)
 target_link_libraries(simpletest simple)

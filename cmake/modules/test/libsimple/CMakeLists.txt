@@ -22,7 +22,7 @@ if(NOT MSVC)
 endif()
 cm_test_link_libraries(simple)
 install(FILES test.cpp DESTINATION include2)
-cm_deploy(TARGETS simple include include)
+cm_deploy(TARGETS simple INCLUDE include)
 
 cm_test(NAME simpletest SOURCES test.cpp)
 
